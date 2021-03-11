@@ -1,7 +1,7 @@
 # Contributing
-[issues]: https://github.com/technote-space/ts-package-template/issues
-[fork]: https://github.com/technote-space/ts-package-template/fork
-[pr]: https://github.com/technote-space/ts-package-template/compare
+[issues]: https://github.com/technote-space/prisma-seeder-tools/issues
+[fork]: https://github.com/technote-space/prisma-seeder-tools/fork
+[pr]: https://github.com/technote-space/prisma-seeder-tools/compare
 [eslint]: https://eslint.org/
 [jest]: https://jestjs.io/
 [code-of-conduct]: CODE_OF_CONDUCT.md

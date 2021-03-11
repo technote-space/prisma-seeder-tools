@@ -1,18 +1,18 @@
 {
-  "name": "@technote-space/ts-package-template",
+  "name": "@technote-space/prisma-seeder-tools",
   "version": "0.1.0",
-  "description": "Template for npm package.",
+  "description": "",
   "keywords": [
     "github",
     "github actions"
   ],
-  "homepage": "https://github.com/technote-space/ts-package-template",
+  "homepage": "https://github.com/technote-space/prisma-seeder-tools",
   "bugs": {
-    "url": "https://github.com/technote-space/ts-package-template/issues"
+    "url": "https://github.com/technote-space/prisma-seeder-tools/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/technote-space/ts-package-template.git"
+    "url": "https://github.com/technote-space/prisma-seeder-tools.git"
   },
   "license": "MIT",
   "author": {
@@ -30,7 +30,6 @@
     "cover": "jest --coverage",
     "lint": "eslint 'src/**/*.ts' '__tests__/**/*.ts' --cache",
     "lint:fix": "eslint --fix 'src/**/*.ts' '__tests__/**/*.ts'",
-    "setup": "if [[ $(uname -s) == 'Darwin' ]]; then BASH_ENV=~/.bashrc bash -O expand_aliases bin/setup.sh; else bash bin/setup.sh; fi && if [[ -f __DELETE__ ]]; then rm -rdf bin __DELETE__; fi",
     "test": "yarn lint && yarn cover",
     "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit",
     "postinstall": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/husky ] || husky install",
