@@ -15,3 +15,4 @@ export type DelegateTypes<T extends PrismaClient> = {
   } ? key : never
 }[keyof T];
 export type DefineCallback<T extends Model> = (faker: Faker.FakerStatic, ...params: any[]) => Partial<T>;
+export type FactoryDefinition<P extends PrismaClient> = [DelegateTypes<P>, DefineCallback<any>];

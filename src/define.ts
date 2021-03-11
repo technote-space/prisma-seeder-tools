@@ -1,10 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type {Model, DelegateTypes, DefineCallback, PrismaClient} from './types';
+import type {Model, DelegateTypes, DefineCallback, PrismaClient, FactoryDefinition} from './types';
 
-const defines: Record<string, DefineCallback<any>> = {};
-
-export const define = <P extends PrismaClient, T extends Model>(type: DelegateTypes<P>, callback: DefineCallback<T>): void => {
-  defines[type as string] = callback;
-};
-
-export const getDefines = (): Record<string, DefineCallback<any>> => defines;
+export const createDefinition = <P extends PrismaClient, T extends Model>(type: DelegateTypes<P>, callback: DefineCallback<T>): FactoryDefinition<P> => [
+  type,
+  callback,
+];
