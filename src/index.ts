@@ -1,12 +1,10 @@
-import {WAIT_MS} from './constant';
+import type {PrismaClient} from './types';
+import type {Seeder} from './seeder';
 
-export const add = (num1: number, num2: number): number => num1 + num2;
-
-const wait          = (): Promise<void> => new Promise(resolve => setTimeout(resolve, WAIT_MS));
-export const repeat = (callback: () => void, times: number): Promise<void> => {
-  return [...Array(times).keys()].reduce(async(prev) => {
+export const seed = async <P extends PrismaClient>(prisma: P, seeders: Seeder<P>[]): Promise<void> => {
+  await seeders.reduce(async(prev, seeder) => {
     await prev;
-    callback();
-    await wait();
+    await seeder.run();
   }, Promise.resolve());
+  await prisma.$disconnect();
 };
