@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/%40technote-space%2Fprisma-seeder-tools.svg)](https://badge.fury.io/js/%40technote-space%2Fprisma-seeder-tools)
 [![CI Status](https://github.com/technote-space/prisma-seeder-tools/workflows/CI/badge.svg)](https://github.com/technote-space/prisma-seeder-tools/actions)
-[![codecov](https://codecov.io/gh/technote-space/prisma-seeder-tools/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/prisma-seeder-tools)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/prisma-seeder-tools/badge)](https://www.codefactor.io/repository/github/technote-space/prisma-seeder-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/prisma-seeder-tools/blob/master/LICENSE)
 
