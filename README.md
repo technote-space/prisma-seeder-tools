@@ -14,9 +14,9 @@ Seeder tools for prisma
 <details>
 <summary>Details</summary>
 
-- [Setup](#setup)
-  - [yarn](#yarn)
-  - [npm](#npm)
+- [Usage](#usage)
+  - [Install](#install)
+  - [Use](#use)
 - [Author](#author)
 
 </details>
