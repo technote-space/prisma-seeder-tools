@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type {DelegateTypes, PrismaClient, FactoryDefinition} from './types';
+import type {DelegateTypes, PrismaClient} from './types';
 import {factory, Factory} from './factory';
+import {DefineCallback} from './types';
 
 export abstract class Seeder<P extends PrismaClient> {
   private readonly factories: Record<string, Factory<P, any, any>>;
-  private definitions: FactoryDefinition<P>[] | undefined;
+  private definitions: Record<string, DefineCallback<any>> | undefined;
 
   protected constructor(private prisma: P) {
     this.factories = {};
@@ -21,7 +22,7 @@ export abstract class Seeder<P extends PrismaClient> {
 
   protected abstract run(): Promise<void>;
 
-  public async execute(definitions: FactoryDefinition<P>[]): Promise<void> {
+  public async execute(definitions: Record<string, DefineCallback<any>>): Promise<void> {
     this.definitions = definitions;
     return this.run();
   }
