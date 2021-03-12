@@ -2,8 +2,6 @@
 import type {Model, DelegateTypes, PrismaClient, DefineCallback} from './types';
 import Faker from 'faker';
 
-Faker.locale = 'ja';
-
 export class Factory<P extends PrismaClient, T extends Model, U extends Model | undefined> {
   constructor(
     private readonly prisma: P,

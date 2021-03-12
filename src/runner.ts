@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type {PrismaClient, Model, DelegateTypes, FactoryDefinition, DefineCallback} from './types';
 import type {Seeder} from './seeder';
+import Faker from 'faker';
 
 export class Runner<P extends PrismaClient> {
   private __hasRun = false;
@@ -10,8 +11,12 @@ export class Runner<P extends PrismaClient> {
     private prisma: P,
     definitions: FactoryDefinition[],
     private seeders: Seeder<P>[],
+    locale?: string,
   ) {
     this.__definitions = Object.assign({}, ...definitions.map(item => ({[item[0] as string]: item[1]})));
+    if (locale) {
+      Faker.locale = locale;
+    }
   }
 
   public async run(): Promise<void> {
