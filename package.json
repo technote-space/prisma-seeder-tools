@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/prisma-seeder-tools",
-  "version": "0.3.16",
+  "version": "0.3.17",
   "description": "",
   "keywords": [
     "github",
@@ -42,9 +42,9 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@types/faker": "^5.5.8",
-    "@types/node": "^16.7.8",
-    "@typescript-eslint/eslint-plugin": "^4.30.0",
-    "@typescript-eslint/parser": "^4.30.0",
+    "@types/node": "^16.7.13",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
