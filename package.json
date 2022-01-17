@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/prisma-seeder-tools",
-  "version": "0.3.22",
+  "version": "0.3.23",
   "description": "",
   "keywords": [
     "github",
@@ -36,18 +36,18 @@
     "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit"
   },
   "dependencies": {
-    "faker": "^5.5.3"
+    "faker": "^6.6.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
+    "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/faker": "^5.5.9",
-    "@types/node": "^17.0.7",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
     "eslint": "^8.6.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.5",
+    "lint-staged": "^12.1.7",
     "pinst": "^2.1.6",
     "typescript": "^4.5.4"
   },
